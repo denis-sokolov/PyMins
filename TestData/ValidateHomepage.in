@@ -1,0 +1,736 @@
+<!--
+Copyright (c) 2009 Monika Pudlovskyte.
+
+This file is part of PyMins.
+
+PyMins is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+PyMins is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with PyMins.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!-- See sokolov.cc/sources -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+	<head class="">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Denis Sokolov
+		</title>
+		<meta name="keywords"
+				content="Denis Sokolov, Denis, Sokolov, homepage">
+		<meta name="description"
+				content="The homepage of a young, talented coder and a nice, interesting person — Denis Sokolov.">
+		<meta name="author" content="Denis Sokolov">
+		<meta name="robots" content="all">
+
+		<link rel="stylesheet" type="text/css" href="css/main/">
+
+		<link rel="alternate" type="application/rss+xml"
+			title="RSS updates"
+			href="http://feeds.sokolov.cc/DenisSokolovUpdates">
+
+<link href="http://denis-sokolov.mp" rel="openid.delegate" />
+<link href="http://denis-sokolov.mp" rel="openid2.local_id" />
+<link href="https://secure.mp/s/denis-sokolov.mp/server" rel="openid.server" />
+<link href="https://secure.mp/s/denis-sokolov.mp/server" rel="openid2.provider" />
+
+<!--
+		<link rel="openid.server" href="http://id.sokolov.cc/MyID.config.php">
+		<link rel="openid.delegate" href="http://id.sokolov.cc/MyID.config.php">
+-->
+		<link rel="home" href="http://sokolov.cc/">
+		<link rev="made" href="mailto:denis@licejus.lt">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="apple-touch-icon" href="img/favicon.png">
+<!--
+		[if IE 6]><link rel="stylesheet" type="text/css" href="hacks/ie/ie6.css"><![endif]
+		-->
+	</head>
+	<body>
+		<ul id="header">
+			<li class="nutshell block">
+				<h1>
+					<a name="contents">
+						Denis Sokolov in a nutshell
+					</a>
+				</h1>
+				<p>
+					<span class="greeting">Greetings,</span>
+						I am so glad to meet you!
+				</p>
+				<p>
+					I am a
+					<a class="in" href="#developer"
+						accesskey="1">
+						professional web developer
+					</a>
+					for my work and hobby;
+					<a class="in" href="#cat"
+						accesskey="2">a calm and happy optimist cat</a>
+					in my everyday life;
+					and a
+					<a class="in" href="#fantasy"
+						accesskey="3">fantasy world dweller</a>
+					in general.
+				</p>
+				<p>
+					You can see my
+						<a class="in" href="#social"
+							accesskey="4">views</a> on
+						religion, politics, music and other social stuff,
+						you can find my
+						<a class="in" href="#web"
+							accesskey="5">other presences on the web</a
+						><!-- ,
+
+						you can read my, hopefully, insightful
+						<a class="in" href="#thoughts">thoughts</a> on random
+							topics, such as <em>Skype</em>
+								or <em><var>Stupidity</var></em>
+						-->
+						and, finally, get to know my
+						<a class="in" href="#copyright"
+							accesskey="6">stance</a>
+							on intellectual property
+							and information licensing.
+				</p>
+				<p class="contact">
+					<a name="contact">Contact me:</a>
+				</p>
+				<p class="updates">
+					<a href="http://feeds.sokolov.cc/DenisSokolovUpdates"
+						title="Updates" rel="alternate"
+						class="nonoclick">
+						Follow me</a>
+				</p>
+				<p class="certificates">
+					<a href="http://zend.com/zce.php?c=ZEND008825&amp;r=227001878"
+							class="ext zend"
+							title="Zend Certification"
+						><img src="img/certificates/zce.png"
+							width="73" height="47"
+							alt="[Zend Certified Engineer logotype]"
+							title="Denis Sokolov is
+								Zend Certified Engineer."></a>
+					<!--
+					<a href=""><var>Download my resume</var></a>
+					-->
+				</p>
+			</li>
+			<li class="coverImage block">
+				<p class="help">
+					<a href="help" class="thickbox ir help"
+						title="Help on this page" rel="help">
+						Need help?
+						<span></span>
+					</a>
+				</p>
+				<p class="photo">
+					<a href="img/photo/me/vaivorykste.700.jpg"
+						title="Full size" class="nonoclick thickbox">
+						<img src="img/photo/me/vaivorykste.500.jpg"
+							alt="[Photo. Denis Sokolov and the rainbow.]"
+							longdesc="/about/photos/rainbow"
+							class="photo"
+							width="300" height="400"
+							title="Denis Sokolov with a rainbow">
+					</a>
+				</p>
+			</li>
+		</ul>
+		<div id="middle">
+				<!--[if IE 8]>
+					<div id="ieMessage">
+						<p>
+							I am glad you are using the most recent
+								Internet Explorer version.
+							However, since it is in a beta version at the moment,
+								you can find some problems on my website.
+							They could be my problems or they could be
+								the browser's problems.
+							In any case, I will look into them.
+						</p>
+					</div>
+				<![endif]-->
+				<!--[if IE 7]>
+					<div id="ieMessage" class="notice">
+						<p>
+							The browser you are using is quite insecure,
+								slow and incompatible
+							It is recommended that you
+								<a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx"
+										class="ext msft"
+										title="Internet Explorer download page"
+									>update it now</a> to version 8
+								or
+								<a href="http://www.google.com/chrome"
+									class="ext chrome"
+									title="Google Chrome download page
+								>choose a better browser</a>
+								instead.
+						</p>
+					</div>
+				<![endif]-->
+				<!--[if IE 6]>
+					<div id="ieMessage" class="warning">
+						<p>
+							The browser you are using
+								(Internet Explorer 6)
+								is very old, insecure
+								and incompatible.
+							It is strongly recommended that you
+								<a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx"
+										class="ext msft"
+										title="Internet Explorer download page"
+									>update it now</a>
+								or
+								<a href="http://www.google.com/chrome"
+									class="ext chrome"
+									title="Google Chrome download page
+								>choose a better browser</a>
+								 instead.
+						</p>
+					</div>
+				<![endif]-->
+			<noscript>
+				<div id="noscriptMessage">
+					<p>
+						The site works without JavaScript.
+						However, there are nice tweaks, which
+							enhance the browsing experience, such as better
+							layout management.
+					</p>
+				</div>
+			</noscript>
+		</div>
+		<ul id="content">
+			<li id="developerBlock">
+				<h1>
+					<a name="developer">
+						A web developer
+					</a>
+				</h1>
+				<p>
+					I make web applications.
+					Be it websites or some tools or widgets.
+					And I do it right.
+					For I care about my honour first and money second.
+					Thus, I prefer to spend more time,
+						but make the final result better.
+				</p>
+				<p>
+					There are many developers out there,
+						who think it&rsquo;s ok to do their job
+						sloppily, as long as it looks ok from the
+						outside.
+					They say, that &lsquo;the internals don't really matter&rsquo;.
+					But this is wrong and it backfires later.
+					Thus, I pay a lot of attention to details and
+						always reach for top quality.
+					Luckily, I know a lot about the current stance
+						on web technical trends and I always
+						keep up to date.
+				</p>
+				<p>
+					Currently I am available for hire as a freelancer.
+				</p>
+				<h2>Specific skills</h2>
+				<p>
+					What I value the most is my overall understanding
+						of web development.
+					That includes good
+					<abbr title="Hypertext Transfer Protocol">HTTP</abbr> knowledge,
+						understanding of <strong>usability</strong> and
+						<strong>accessibility</strong>.
+					Ability to stop and think about the design errors,
+						find the mistakes or opportunities and offer
+						improvements.
+				</p>
+				<p>
+					Recently, though, I have found myself learning
+						<strong>typography</strong> and typography for
+						the web.
+					I hope to reach a serious level of comprehension
+						in the nearest future.
+				</p>
+				<p>
+					In coding, my main tool of choice is
+					<abbr title="PHP: Hypertext Processor">PHP</abbr>.
+					Wide spread, superb documentation and huge community
+						are what makes it good.
+					I am highly experienced in PHP.
+				</p>
+				<p class="certificates">
+					<a href="http://www.expertrating.com/transcript.asp?transcriptid=969027"
+							class="ext nonoclick" rel="me"
+							title="ExpertRating Certification"
+						><img src="img/certificates/expertrating.png"
+							width="206" height="75"
+							alt="[ExpertRating PHP 4 Certification logotype]"
+							title="Denis Sokolov is ExpertRating
+								Certified PHP Engineer."
+					></a>
+					<!--[space]-->
+					<a href="http://zend.com/zce.php?c=ZEND008825&amp;r=227001878"
+							class="ext nonoclick" rel="me"
+							title="Zend Certification"
+						><img src="img/certificates/zce.png"
+							width="73" height="47"
+							alt="[Zend Certified Engineer logotype]"
+							title="Denis Sokolov is
+								Zend Certified Engineer."
+					></a>
+				</p>
+				<p>
+					Of course, I am highly proficient with
+						<abbr title="Hypertext Markup Language">
+							HTML</abbr>
+						and I keep up with the changes in the standart
+						and its future.
+					Where needed, I use
+					<abbr title="eXtensible Hypertext Markup Language">XHTML</abbr>,
+					although I think that it is overhyped and does not
+						really have that many advantages.
+				</p>
+				<p>
+					On the client-side, we code in <strong>JavaScript</strong>.
+						Although I am not as experienced in it as I am
+						in PHP,
+						I still manage to get big things done, mostly
+						because learned to use documentation
+						effectively, to search for answers and find solutions.
+				</p>
+				<p>
+					Finally, there are <abbr title="Cascading Style Sheets">CSS</abbr>,
+						micro formats,
+						<abbr title="Representational State Transfer">REST</abbr>
+						interactions.
+				</p>
+			</li>
+			<li id="catBlock">
+				<h1>
+					<a name="cat">
+						Kawaii Cat
+					</a>
+				</h1>
+				<h2>
+					What&rsquo;s <em>kawaii</em>?
+				</h2>
+				<p>
+					Literally translated from Japanese,
+						<em>kawaii</em> means <em>cute</em>.
+					But there&rsquo;s much more to that.
+					<a href="http://en.wikipedia.org/wiki/Kawaii"
+						class="ext wp"
+						title="Cuteness in Japanese culture on Wikipedia"
+						><em>Cuteness</em> in Japanese culture</a>
+						is more of a concept, a way of life.
+					It's smiling, being nice and supportive.
+					It's ignoring bad words and concentrating on
+						positive aspects of every situation.
+					It's... Kawaii. <span class="emoticon">^_~</span>
+				</p>
+				<h2>Life goals</h2>
+				<p>
+					I have got two main goals in my life: make people
+						I love (myself included) happy and not disturb
+						the happiness of other people.
+				</p>
+				<p>
+					There is a simple set of rules that leads me.
+					They are:
+				</p>
+				<h3>Be kind and nice to everybody</h3>
+				<p>
+					For any new person, regardless of his or her
+						identity, I try to be kind and friendly.
+					In other words, I try to avoid prejudice.
+					The only exception?
+					Strange guys in dark streets.
+				</p>
+				<h3>Assume good faith</h3>
+				<p>
+					Always assume good faith in words or actions
+						of other people.
+					However unlikely it might look,
+						I try to think that a person meant no
+						offence&mdash;that
+						either he made an honest mistake either
+						I did not understand his or her real intentions.
+					There's a reason why this is
+						<a class="ext wp"
+							title="Wikipedia:Assume good faith"
+							href="http://en.wikipedia.org/wiki/Wikipedia:Assume_good_faith"
+						>one of Wikipedia guidelines</a>.
+				</p>
+				<h3>Ignore baseless critics</h3>
+				<p>
+					&lsquo;Faggot!&rsquo;, &lsquo;Asshole!&rsquo;,
+					&lsquo;This won't work!&rsquo;,
+					&lsquo;You look silly!&rsquo;...
+					Yeah, whatever.
+				</p>
+				<!--
+					<h3>Value results over motives</h3>
+					<p>
+						Practice shows, that the output of an action is
+							proportionate to the input to the action.
+						&lsquo;I tried!&rsquo;, on the other hand,
+							usually means &lsquo;I tried,
+							but not really hard enough&rsquo;.
+					</p>
+				-->
+				<h3>Have no principles</h3>
+				<p>
+					Being stubborn in any principle is very
+						unflexible. I can do whatever is useful at the
+						moment, if that will not hurt me, my future,
+						or anyone else instead.
+				</p>
+				<p>
+					This point highly correlates with my
+						<a href="http://en.wikipedia.org/wiki/Alignment_(Dungeons_&_Dragons)"
+							class="ext wp"
+							title="Dungeons and Dragons concept of alignment explained on Wikipedia"
+							><abbr title="Dungeons and Dragons">DnD</abbr>
+						alignment</a>,
+						which is <a name="alignment">Lawful Neutral with
+							a tendency for Good</a>.
+				</p>
+				<p class="photos">
+					<img width="265" height="420"
+						class="photo"
+						src="img/photo/forest.jpg"
+						alt="[Me, Monika and Lula in the Forest, happy
+							and cheerful.]"
+						title="Me, Monika and Lula in the
+							Forest&mdash;&lsquo;two cats and a dog&rsquo;"
+					>
+				</p>
+				<p>
+					Denis is a cat. Monika is a cat. They both are
+						wonderful cats. <span class="emoticon">=^o^=</span>
+				</p>
+				<!--
+					<h3>Nevertink pasiteisinimu</h3>
+				-->
+			</li>
+			<li id="fantasyBlock">
+				<h1>
+					<a name="fantasy">
+						Fantasy world dweller
+					</a>
+				</h1>
+				<p>
+					I enjoy the fantasy world:
+					I read about it,
+					I play in it,
+					I rule it.
+				</p>
+				<h2><abbr title="Role Playing Games">RPG</abbr>s</h2>
+				<p>
+					A while ago I tried and played both
+						<abbr title="Dungeons and Dragons">DnD</abbr>
+						and
+						<abbr title="Generic Universal Role Playing System"
+							>GURPS</abbr>
+						and I have to say, I like GURPS
+						way more.
+					It is versatile, more realistic and easier to
+						adapt to one's will.
+				</p>
+				<p>
+					Later, I game-(dungeon-)mastered some games of my own.
+					I like it, but, unfortunately, it takes way too much
+						time to fit in my today's schedule.
+					I hope I'll get back to it one day...
+				</p>
+				<h2>
+					Magic: the Gathering and DCI
+				</h2>
+				<p>
+					I like a great collectible game
+						&lsquo;<a href="http://wizards.com/magic/"
+							class="ext"
+							title="Magic: the Gathering homepage">Magic</a>&rsquo;.
+					From
+						<span class="note" title="A specific Magic set"
+							>Mirrodin</span> to
+						<span class="note" title="Another, later Magic set"
+							>Ravnica</span> I have played it and
+						step after step upgraded my mono-blue control deck.
+					Today I no longer play it, but I judge it,
+					<a href="img/photo/me/judge.b.jpeg"
+						title="Photo of me as a judge" class="nonoclick thickbox">
+						me being a certified DCI judge</a>.
+				</p>
+				<p class="certificates">
+					<a href="http://judge.wizards.com/people.aspx?dcinumber=79277774"
+						class="ext" rel="me"
+						title="Official information regarding me as a DCI judge. [Requires login to wizards.com]"
+						><img src="img/dci/dci60.png"
+							height="60" width="146"
+							alt="[The DCI logo]"
+					></a>
+				</p>
+
+			</li>
+			<li id="socialBlock">
+				<h1>
+					<a name="social">
+						Social attributes
+					</a>
+				</h1>
+				<h2>Religion</h2>
+				<p>
+					I am an
+					<a href="http://en.wikipedia.org/wiki/Ignostic"
+						class="ext wp"
+							><strong>Ignostic</strong></a>, what in simple words means that I
+						do not understand what the fuss is all about and
+						will not understand it until someone gives me a
+						clear definition of this &lsquo;God&rsquo;
+						people are fighting for.
+					What exactly do you mean by saying &lsquo;God&rsquo;?
+					And while you think about it, think if
+						<em>evolution</em> or <em>physics</em>
+						fit your definition. Seriously.
+				</p>
+				<h2>Politics</h2>
+				<p>
+					Unfortunately, I am <strong>apolitic</strong>. That is, I do not know,
+						I do not see, I do not have an opinion.
+					Nevertheless, I vote. I ask my friends, what is the
+						correct way and I vote, effectively multyplying
+						the opinion of my friends, whom I trust.
+				</p>
+				<h2>Fashion</h2>
+				<p>
+					Could not care less.
+				</p>
+				<h2>Music</h2>
+				<p>
+					I've got quite an <strong>eclectic</strong> music taste.
+					For instance, my favourite artists are CocoRosie, Jean
+					Michel Jarre and Yuki Kajiura.
+					All three are very different, I would say, incompatible.
+				</p>
+				<p>
+					The first and foremost stands
+					<a href="http://www.last.fm/music/CocoRosie"
+						class="ext lastfm">CocoRosie</a>—a pair
+						of two sweet <strong>freak folk</strong> girls,
+						who have very touching voice and sound.
+						There are similarities with Björk or Joanna
+						Newsom (I like both), but CocoRosie feels more...
+						intimate.
+				</p>
+				<p>
+					Next, the master of <strong>electronic</strong>
+						music, the God and creator himself,
+						<a href="http://www.last.fm/music/Jean-Michel+Jarre"
+							class="ext lastfm">Jean Michel Jarre</a>.
+					I do not usually listen to electronic music that
+						much, but he is an exception to the rule, for his
+						creations fit unbelievably with my hobby of
+						coding. Whatever the time of the day, there is
+						no better sounds to lead me to action, than
+						Oxygene or Rendez–Vous albums.
+				</p>
+				<p>
+					Furthermore, I like music, based on
+						<strong>anime soundtracks</strong>.
+						I am talking of course, about
+						<a href="http://www.last.fm/music/%E6%A2%B6%E6%B5%A6%E7%94%B1%E8%A8%98"
+							class="ext lastfm">Yuki Kajiura</a>, who
+						is a wonderful creator and a magical lady,
+						which fills my soul with extraordinar music.
+					Other great artists are The Pillows, Jinn, soundTemp.
+				</p>
+				<p>
+					Finally, I love <strong>jazz</strong>. Mostly
+						swing and bebop, but a few calmer melodies as
+						well. These are the main artists:
+					Frank Sinatra, Ray Charles, Melody Gardot,
+						Petra Magoni, Dave Brubeck Quartet.
+				</p>
+				<!-- <p>
+					Further, <strong>rock</strong> is good as well and I enjoy listening to
+						Scorpions as much as I do listening to the Offspring.
+					However, I will avoid aggressive kinds.
+				</p> -->
+				<h2>Sexual orientation</h2>
+				<p>
+					Do you care? Call me!
+				</p>
+			</li>
+			<!--
+			<li id="thoughtsBlock">
+				<h1>
+					<a name="thoughts">
+						Thoughts
+					</a>
+				</h1>
+				<p>
+					Here you can read my insightful thoughts on different
+						topics.
+				</p>
+				<ul>
+					<li>On Skype</li>
+				</ul>
+			</li>
+			-->
+			<!--
+			<li id="gadgets">
+				<h1>
+					My gadgets
+				</h1>
+				<p>
+					orai.katinas.org
+				</p>
+			</li>
+			-->
+			<li id="webBlock">
+				<h1>
+					<a name="web">
+						Elsewhere on the web
+					</a>
+				</h1>
+				<p>
+					I am a geek and you can find me on many services
+						online.
+				</p>
+				<p>
+					You can take a look at my
+						<a href="http://www.linkedin.com/in/sokolovdenis"
+							class="ext linkedin" rel="me"
+							title="Denis Sokolov business profile"
+						>business profile</a>,
+						<a href="http://picasaweb.google.com/sokolov.denis"
+							class="ext picasa" rel="me"
+							title="Denis Sokolov photos">photo albums</a>,
+					check the exact data on my
+						<a href="http://last.fm/user/sokolov"
+							class="ext lastfm" rel="me"
+							title="Denis Sokolov music taste">music taste</a>,
+					search through
+						<a href="http://delicious.com/DenisSokolov"
+							class="ext delicious" rel="me"
+							title="Denis Sokolov bookmarks">my bookmarks</a>,
+					check out what
+						<a href="http://myanimelist.net/animelist/Akral"
+							class="ext myanimelist" rel="me"
+							title="Anime Denis Sokolov has seen"
+						>anime have I watched</a>
+					recently.
+				</p>
+				<h2>In Lithuanian</h2>
+				<p>
+					There are some other presences of me, which are
+						accessible if you speak Lithuanian.
+				</p>
+				<p>
+					Sometimes I <a href="http://twitter.com/Katinas"
+							class="ext twitter" rel="me"
+							title="Denis Sokolov twitter">tweet</a>,
+					sometimes I post something in
+						<a href="http://kaip.katinas.org"
+							class="ext tumblr" rel="me"
+							title="Denis Sokolov microblog">my microblog</a>.
+					Sometimes I share something in my Google Reader
+						<a href="https://www.google.com/reader/shared/01699409262852644065"
+							class="ext greader" rel="me"
+							title="Denis Sokolov' shared items">
+						shared items
+						</a>.
+					Sometimes I even organize an event or two on
+						<a href="http://toostis.com/user/Denis"
+							class="ext toostis" rel="me"
+							title="Denis Sokolov on toostis">toostis</a>.
+				</p>
+			</li>
+			<li id="copyrightBlock">
+				<h1>
+					<a name="copyright">
+						Intellectual property
+					</a>
+				</h1>
+				<h2>My stance</h2>
+				<p>
+					Respecting intellectual property is important.
+					Copyright infringement is not stealing, but it is
+						wrong.
+				</p>
+				<p>
+					I respect the creators' will and I urge you to do
+						the same.
+				</p>
+				<h2>Licensing</h2>
+				<ul>
+					<li>
+						<p>
+							Most icons on this page are from a great set
+								&lsquo;<a href="http://www.famfamfam.com/lab/icons/silk/"
+								class="ext">Silk</a>&rsquo;, which is licensed under
+								<a href="http://creativecommons.org/licenses/by/2.5/"
+									class="ext" rel="license">cc by 2.5</a>.
+							Some icons are modified a little bit by me
+								(<img src="templates/img/arrow_up.png" alt="Blue arrow up" width="16" height="16"
+								><img src="templates/img/worldLight.png" alt="Light world" width="16" height="16">)
+								and are licensed under
+								<a href="http://creativecommons.org/licenses/by/3.0/"
+									class="ext" rel="license">cc by 3</a>.
+							RSS icon is from
+								<a href="http://www.zeusboxstudio.com/blog/feedicons-2"
+									class="ext">Zeusbox Studio</a>
+									and is licensed under
+								<a href="http://creativecommons.org/licenses/by-nd/3.0/"
+								 	class="ext" rel="license">cc by-nd 3</a>.
+						</p>
+					</li>
+					<li>
+						<p class="jsonly">
+							Black popup box is
+							<a href="http://jquery.com/demo/thickbox/"
+								class="ext">thickbox</a>,
+							licensed under
+							<a href="http://creativecommons.org/licenses/MIT/"
+								class="ext">MIT</a> license.
+						</p>
+					</li>
+					<li>
+						<p>
+							Everything else is created by me and is licensed
+								in the following way:
+							the code is licensed
+								under <a href="http://www.gnu.org/licenses/gpl-3.0.html"
+									class="ext" rel="license">GPL 3</a>,
+							while the content and the design are licensed under
+							<a href="http://creativecommons.org/licenses/by/3.0/"
+									class="ext" rel="license">cc by 3</a>
+						</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div id="footer">
+			<p>
+				This is it.
+			</p>
+			<p>
+				Want to know more? Contact me:
+			</p>
+		</div>
+		<script type="text/javascript" src="js/main/"></script>
+	</body>
+</html>
