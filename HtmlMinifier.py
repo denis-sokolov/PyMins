@@ -42,15 +42,20 @@ class HtmlMinifier(SgmlMinifier):
 
 	def removeTags(self):
 		'''Removes not needed HTML tags'''
-		for tag in ['body','/colgroup','/dd','/dt','head','html','/li',
-			'/option','/p','tbody','/td','/tfoot','/th','/thead','/tr']:
-			if tag[0] == '/':
-				self.content = self.content.replace('<%s>' % tag,'')
-			else:
-				length = len(self.content)
-				self.content = self.content.replace('<%s>' % tag,'')
-				if len(self.content) < length:
-					self.content = self.content.replace('</%s>' % tag,'')
+		# Delete unneeded closing tags.
+		self.content = re.sub(
+			r'\</(colgroup|dd|dt|li|option|p|td|tfoot|th|thead|tr)\>',
+			'', self.content)
+
+		# Delete main tags both with start and end.
+		# You can't delete end tag if start was not deleted.
+		# (contained some attributes)
+		# Four separate re's was way slower.
+		madeMore = 1
+		while madeMore:
+			self.content, madeMore = re.subn(
+				r'\<(body|head|html|tbody)>(.*?)\</\1>',
+				r'\2', self.content)
 		return self
 
 	def removeWhitespace(self):
