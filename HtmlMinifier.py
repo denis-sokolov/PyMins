@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 '''
-Copyright (c) 2009 Monika Pudlovskyte.
+Copyright (c) 2009 Monika Pudlovskyte, Denis Sokolov.
 
 This file is part of PyMins.
 
