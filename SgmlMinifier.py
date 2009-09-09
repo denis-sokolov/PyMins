@@ -25,7 +25,7 @@ import re
 
 class SgmlMinifier(Minifier):
 	def minify(self, content = None):
-		Minifier.minify(self, content)
+		super(SgmlMinifier, self).minify(content)
 		self.removeWhitespace().removeComments()
 		return self
 

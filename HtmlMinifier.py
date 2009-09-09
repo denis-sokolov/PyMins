@@ -34,7 +34,7 @@ class HtmlMinifier(SgmlMinifier):
 
 	def minify(self, content = None):
 		'''Applies all the other minification methods.'''
-		Minifier.minify(self, content)
+		super(HtmlMinifier, self).minify(content)
 		self.removeWhitespace().removeComments()
 		self.content = self.AttributeCleaner(self.content).minify().get()
 		return self
@@ -65,7 +65,7 @@ class HtmlMinifier(SgmlMinifier):
 			<html> <head> <title> becomes
 			<html><head><title>, but
 			<p>Foo <img> <span> stays the same.'''
-		SgmlMinifier.removeWhitespace(self)
+		super(HtmlMinifier, self).removeWhitespace()
 		self.content = re.sub(r'> \<(?P<closingSlash>/?)(?!(%s)[^a-zA-Z])' % self.inlineTags,
 					r'><\g<closingSlash>', self.content)
 		# This is for reference on how the hell that just worked.
@@ -89,7 +89,7 @@ class HtmlMinifier(SgmlMinifier):
 		singularAttributes = ['compact','checked','declare','defer','disabled','ismap','nohref','noshade','noresize','nowrap','multiple','readonly','selected']
 
 		def minify(self, content = None):
-			Minifier.minify(self, content)
+			super(HtmlMinifier.AttributeCleaner, self).minify(content)
 			self.iterateAttributes()
 			return self
 
