@@ -80,6 +80,11 @@ class HtmlMinifier(SgmlMinifier):
 		#			)
 		#			''' % self.inlineTags,
 		#			r'><\g<closingSlash>', self.content)
+
+		# Space in the beginning of the content:
+		self.content = re.sub(r'(<[^>]+>) ', r'\1', self.content)
+		# Space at the end of the content
+		self.content = re.sub(r' (</[^>]+>)', r'\1', self.content)
 		return self
 
 	class AttributeCleaner(Minifier):
