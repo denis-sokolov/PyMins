@@ -21,6 +21,7 @@ along with PyMins.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
 from Minifier import Minifier
+from JSpacker import JavaScriptPacker
 
 class JavascriptMinifier(Minifier):
 	'''Minifies CSS
@@ -32,4 +33,7 @@ class JavascriptMinifier(Minifier):
 	def minify(self, content = None):
 		'''Applies all the other minification methods.'''
 		super(JavascriptMinifier, self).minify(content)
+		packed = JavaScriptPacker().pack(self.content, compaction=False, encoding=62, fastDecode=False)
+		if len(packed)*1.1 < len(self.content):
+			self.content = packed
 		return self

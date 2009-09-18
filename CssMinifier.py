@@ -21,6 +21,7 @@ along with PyMins.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
 from Minifier import Minifier
+import re
 
 class CssMinifier(Minifier):
 	'''Minifies CSS
@@ -32,4 +33,18 @@ class CssMinifier(Minifier):
 	def minify(self, content = None):
 		'''Applies all the other minification methods.'''
 		super(CssMinifier, self).minify(content)
+		self.removeComments()
+		self.removeWhitespace()
+		return self
+
+	def removeComments(self):
+		self.content = re.sub(r'(?s)/\*.*?\*/', '', self.content)
+		return self
+
+	def removeWhitespace(self):
+		self.content = re.sub(r'\s+', ' ', self.content)
+		self.content = re.sub(r' ?([{}>+:;,]) ?', r'\1', self.content)
+		self.content = self.content.replace(';}','}')
+		self.content = re.sub(r'}[^{}]*{}', '}', self.content)
+		self.content = re.sub(r' ?! ?', '!', self.content)
 		return self
