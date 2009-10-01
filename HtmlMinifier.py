@@ -92,6 +92,22 @@ class HtmlMinifier(SgmlMinifier):
 		quotes = '"|\''
 		attributeValueWithoutQuotes = '[a-zA-Z0-9-]+'
 		singularAttributes = ['compact','checked','declare','defer','disabled','ismap','nohref','noshade','noresize','nowrap','multiple','readonly','selected']
+		requiredAttrs = {
+			# http://www.w3.org/TR/html40/index/attributes.html
+			'applet': ['height', 'width'],
+			'area': ['alt'],
+			'basefont': ['size'],
+			'bdo': ['dir'],
+			'form': ['action'],
+			'img': ['alt', 'src'],
+			'map': ['name'],
+			'meta': ['content'],
+			'optgroup': ['label'],
+			'param': ['name'],
+			'script': ['type'],
+			'style': ['type'],
+			'textarea': ['cols', 'rows'],
+		}
 
 		def minify(self, content = None):
 			super(HtmlMinifier.AttributeCleaner, self).minify(content)
@@ -127,14 +143,23 @@ class HtmlMinifier(SgmlMinifier):
 			atrs = []
 			for name, value in attributes:
 				if name in self.singularAttributes:
-					atrs.append(' %s' % name)
+					atrs.append('%s ' % name)
 				elif value == '':
-					pass
+					if tagName in self.requiredAttrs and name in self.requiredAttrs[tagName]:
+						atrs.append('%s=""' % name)
 				elif re.match("^%s$" % self.attributeValueWithoutQuotes, value):
-					atrs.append(' %s=%s' % (name, value))
+					atrs.append('%s=%s ' % (name, value))
 				else:
-					atrs.append(' %s="%s"' % (name, value))
-			return '<%s%s>' % (tagName, ''.join(atrs))
+					atrs.append('%s="%s"' % (name, value))
+
+			atrs = ''.join(atrs)
+			if atrs:
+				if atrs[-1] == '"':
+					return '<%s %s>' % (tagName, atrs)
+				else:
+					return '<%s %s>' % (tagName, atrs[:-1])
+			else:
+				return '<%s>' % tagName
 
 		def __replacePartsInString(self, string, parts):
 			'''Replace certain parts in a string.
