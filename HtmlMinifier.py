@@ -37,6 +37,7 @@ class HtmlMinifier(SgmlMinifier):
 		super(HtmlMinifier, self).minify(content)
 		self.removeWhitespace().removeComments()
 		self.content = self.AttributeCleaner(self.content).minify().get()
+		self.fixWhitespace()
 		return self
 
 
@@ -56,6 +57,11 @@ class HtmlMinifier(SgmlMinifier):
 			self.content, madeMore = re.subn(
 				r'\<(body|head|html|tbody)>(.*?)\</\1>',
 				r'\2', self.content)
+		return self
+
+	def fixWhitespace(self):
+		self.content = re.sub(r'\<a ([^>]+)> ',	r'<a \1>', self.content)
+		self.content = re.sub(r' \</a>', r'</a>', self.content)
 		return self
 
 	def removeWhitespace(self):
