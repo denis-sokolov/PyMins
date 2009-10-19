@@ -61,7 +61,7 @@ class HtmlMinifier(SgmlMinifier):
 
 	def fixWhitespace(self):
 		self.content = re.sub(r'\<a ([^>]+)> ',	r'<a \1>', self.content)
-		self.content = re.sub(r' \</a>', r'</a>', self.content)
+		self.content = self.content.replace(' </a>', '</a>')
 		return self
 
 	def removeWhitespace(self):
