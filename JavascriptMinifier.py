@@ -30,10 +30,10 @@ class JavascriptMinifier(Minifier):
 		JavascriptMinifier('$(document).load(...').minify().get()
 	'''
 
-	def minify(self, content = None):
+	def minify(self, content = None, force = False):
 		'''Applies all the other minification methods.'''
 		super(JavascriptMinifier, self).minify(content)
 		packed = JavaScriptPacker().pack(self.content, compaction=False, encoding=62, fastDecode=False)
-		if len(packed)*1.1 < len(self.content):
+		if len(packed)*1.1 < len(self.content) or force:
 			self.content = packed
 		return self
