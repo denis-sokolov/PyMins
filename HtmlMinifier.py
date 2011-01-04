@@ -43,8 +43,9 @@ class HtmlMinifier(SgmlMinifier):
 	def removeTags(self):
 		'''Removes not needed HTML tags'''
 		# Delete unneeded closing tags.
+		# Do not delete p tag.
 		self.content = re.sub(
-			r'\</(colgroup|dd|dt|li|option|p|td|tfoot|th|thead|tr)\>',
+			r'\</(colgroup|dd|dt|li|option|td|tfoot|th|thead|tr)\>',
 			'', self.content)
 
 		# Delete main tags both with start and end.
