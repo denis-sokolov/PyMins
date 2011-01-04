@@ -144,21 +144,18 @@ class HtmlMinifier(SgmlMinifier):
 			atrs = []
 			for name, value in attributes:
 				if name in self.singularAttributes:
-					atrs.append('%s ' % name)
+					atrs.append('%s' % name)
 				elif value == '':
 					if tagName in self.requiredAttrs and name in self.requiredAttrs[tagName]:
 						atrs.append('%s=""' % name)
 				elif re.match("^%s$" % self.attributeValueWithoutQuotes, value):
-					atrs.append('%s=%s ' % (name, value))
+					atrs.append('%s=%s' % (name, value))
 				else:
 					atrs.append('%s="%s"' % (name, value))
 
-			atrs = ''.join(atrs)
+			atrs = ' '.join(atrs)
 			if atrs:
-				if atrs[-1] == '"':
-					return '<%s %s>' % (tagName, atrs)
-				else:
-					return '<%s %s>' % (tagName, atrs[:-1])
+				return '<%s %s>' % (tagName, atrs)
 			else:
 				return '<%s>' % tagName
 
